@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: postgress
+    password: postgress
+    url: jdbc:postgresql://localhost:5432/library
+    driver-class-name: org.postgresql.Driver
+    dbcp2:
+      test-while-idle: true
+      validation-query: select 1
+
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+
+
