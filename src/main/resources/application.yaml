@@ -1,7 +1,7 @@
 spring:
   datasource:
-    username: postgress
-    password: postgress
+    username: postgres
+    password: postgres
     url: jdbc:postgresql://localhost:5432/library
     driver-class-name: org.postgresql.Driver
     dbcp2:
